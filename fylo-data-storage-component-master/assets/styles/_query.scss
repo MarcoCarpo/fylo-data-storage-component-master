@@ -1,0 +1,40 @@
+@media screen and (min-width: 800px) {
+  body {
+    background: $very-dark-blue url(../images/bg-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  main {
+    margin: 2rem;
+    flex-direction: row;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .storage {
+    max-width: 54rem;
+    position: relative;
+  }
+
+  .storage-text {
+    text-align: left;
+  }
+
+  .left {
+    position: absolute;
+    max-width: 18rem;
+    top: 0;
+    left: 100%;
+    transform: translate(-120%, -50%);
+  }
+
+  .triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 50%);
+    display: block;
+  }
+}

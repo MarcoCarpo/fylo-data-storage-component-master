@@ -16,7 +16,10 @@
 
     <title>Frontend Mentor | Fylo data storage component</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
@@ -32,7 +35,9 @@
         </div>
       </section>
       <section class="storage">
-        <p class="storage">You’ve used 815 GB of your storage</p>
+        <p class="storage-text">
+          You’ve used <span id="used-gb">815 GB</span> of your storage
+        </p>
         <div class="bar-container">
           <div class="bar">
             <div class="white-circle"></div>
@@ -42,9 +47,11 @@
           <p class="no-gb">0 GB</p>
           <p class="max-gb">1000 GB</p>
         </div>
-      </section>
-      <section class="left">
-        <p><span id="big-text">185</span> GB Left</p>
+        <div class="left">
+          <p class="left-text big-text">185</p>
+          <p class="left-text normal-text">GB LEFT</p>
+          <img src="./assets/images/triangle.svg" alt="" class="triangle" />
+        </div>
       </section>
     </main>
 

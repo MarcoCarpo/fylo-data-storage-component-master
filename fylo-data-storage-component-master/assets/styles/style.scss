@@ -1,10 +1,20 @@
 // Variables
 
+$dark-blue: #1d2c67;
+$very-dark-blue: #0c122c;
+$pale-blue: #dddbff;
+
+$gradient: linear-gradient(270deg, #ff4c97, #ffa399);
 
 // Helper classes
 
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
 
 // Import
-@import "global";
 @import "page";
 @import "query";

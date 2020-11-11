@@ -1,1 +1,166 @@
+//Global styles
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+// Page styles
+
+body {
+  background: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main {
+  height: 100vh;
+
+  display: flex;
+  @include flex(
+    column,
+    center,
+    center
+  ); //direction, justify-content, align-items
+}
+
+.fylo {
+  background: $dark-blue;
+  width: 85%;
+  min-width: 27rem;
+  max-width: 35rem;
+  margin-top: 1rem;
+  @include flex(column, space-around, left);
+  padding: 4rem;
+  border-radius: 1.2rem;
+  border-top-right-radius: 10rem;
+}
+
+.logo-container {
+  padding-bottom: 3rem;
+}
+
+.icons-container {
+  display: flex;
+
+  img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    margin-right: 1rem;
+    padding: 1.3rem;
+    background: $very-dark-blue;
+    border-radius: 0.5rem;
+  }
+}
+
+.storage {
+  position: relative;
+  margin-top: 1.6rem;
+  width: 85%;
+  min-width: 27rem;
+  max-width: 35rem;
+  background: $dark-blue;
+  border-radius: 1.2rem;
+  padding: 3rem;
+}
+
+.storage-text {
+  text-align: center;
+  padding-bottom: 1.5rem;
+
+  #used-gb {
+    font-weight: bold;
+  }
+}
+
+.bar-container {
+  background: #14204a;
+  width: 100%;
+
+  height: 2rem;
+  border-radius: 1rem;
+  @include flex(row, flex-start, stretch);
+}
+
+.bar {
+  width: 75%;
+  margin: 0.3rem;
+  background: $gradient;
+  border-radius: 1rem;
+  @include flex(row, flex-end, stretch);
+}
+
+.white-circle {
+  width: 1rem;
+  margin: 0.16rem;
+  border-radius: 1rem;
+  background: white;
+}
+
+.bar-gb {
+  @include flex(row, space-between, center);
+  padding: 1.3rem 0;
+
+  p {
+    font-weight: 700;
+  }
+}
+
+.left {
+  position: absolute;
+  min-width: 17rem;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background: white;
+  border-radius: 1.2rem;
+  @include flex(row, center, center);
+  padding: 2.5rem 2rem;
+  @include flex(row, center, center);
+  gap: 0.5rem;
+}
+
+.left-text {
+  color: $very-dark-blue;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.big-text {
+  font-size: 4rem;
+}
+
+.triangle {
+  display: none;
+}
+
+.attribution {
+  width: 70%;
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(228, 24%, 84%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
